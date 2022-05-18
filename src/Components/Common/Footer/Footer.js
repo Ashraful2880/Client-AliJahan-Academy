@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div>
                             <Link to="/home">
-                                <img className="mb-4 w-36" src={logo} alt="footer logo" />
+                                <img className="mb-4 w-36 mx-auto lg:mx-0" src={logo} alt="footer logo" />
                             </Link>
                             <FontAwesomeIcon className="w-6 h-6 mx-2 hover:text-red-500 duration-150" icon={faFacebook} />
                             <FontAwesomeIcon className="w-6 h-6 mx-2 hover:text-red-500 duration-150" icon={faInstagram} />
