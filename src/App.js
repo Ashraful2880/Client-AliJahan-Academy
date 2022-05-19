@@ -9,6 +9,10 @@ import Contact from './Components/Contact/Contact';
 import ScrollToTop from "react-scroll-to-top";
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
+import Admissions from './Components/Admissions/Admissions';
+import Department from './Components/Programme/Programme';
+import Programme from './Components/Programme/Programme';
+import TutionFee from './Components/TutionFee/TutionFee';
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/admission' element={<Admissions />} />
+          <Route path='/department' element={<Department />} />
+          <Route path='/programme' element={<Programme />} />
+          <Route path='/fees' element={<TutionFee />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />

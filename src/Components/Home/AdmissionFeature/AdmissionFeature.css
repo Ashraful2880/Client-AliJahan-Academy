@@ -1,0 +1,7 @@
+.promo-style {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.664)), url("https://res.cloudinary.com/ashraful-islam/image/upload/v1652963685/Assesment/AdmissionFeature_hwnfba.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}

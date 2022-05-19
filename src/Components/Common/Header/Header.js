@@ -22,10 +22,25 @@ const Header = () => {
                     </button>
                 </div>
                 <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1">
-                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <ul className="flex flex-col mt-4 md:flex-row md:mt-0 md:text-sm md:font-medium">
                         <li>
                             <Link to="/home" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
                                 Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/admission" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
+                                Admissions
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/programme" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
+                                Programmes
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/fees" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
+                                Tution Fees
                             </Link>
                         </li>
                         <li>
