@@ -48,3 +48,13 @@ button.styles_scroll-to-top__2A70v:hover svg {
 svg {
   height: 19px;
 }
+
+/* Contact Background Image Style */
+
+.bg-style {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.383), rgba(0, 0, 0, 0.418)), url("https://i.ibb.co/nw9dnD4/banner4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
