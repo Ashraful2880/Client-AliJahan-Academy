@@ -8,11 +8,11 @@ const AdmissionFeature = () => {
     return (
         <div className="promo-style py-10">
             <div className="container mx-auto">
-                <div className="flex justify-between items-center">
+                <div className="lg:flex block justify-between items-center">
                     <div className="text-left">
                         <h2 className="text-white text-3xl font-bold">Join Us</h2>
                         <h4 className="text-white text-xl mb-6">Join with us to discover new...</h4>
-                        <div className="text-gray-300">
+                        <div className="text-gray-300 mb-4">
                             <div>
                                 <FontAwesomeIcon icon={faCheck} className="inline text-2xl text-orange-500 mr-2" />
                                 <span> Congenial environment with plenty of open space for rest & recreation.</span>
@@ -40,8 +40,8 @@ const AdmissionFeature = () => {
                         </div>
                     </div>
                     <div className="text-left">
-                        <h1 className="text-4xl font-bold text-white">Admission Going On For Fall-</h1>
-                        <h1 className="text-4xl font-bold text-white mb-10">2022 in Ali Jahan Academy</h1>
+                        <h1 className="lg:text-4xl text-2xl font-bold text-white">Admission Going On For Fall-</h1>
+                        <h1 className="lg:text-4xl text-2xl font-bold text-white mb-10">2022 in Ali Jahan Academy</h1>
                         <Link to="/admission">
                             <button className="text-white border border-orange-500 px-5 py-2 rounded-lg hover:bg-orange-500 duration-300">Apply Online</button>
                         </Link>

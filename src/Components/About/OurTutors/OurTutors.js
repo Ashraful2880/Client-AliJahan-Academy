@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const OurTutors = () => {
     const [tutors, setTutors] = useState([])
     useEffect(() => {
-        fetch("./Tutors.json")
+        fetch("https://ali-jahan-academy.herokuapp.com/tutors")
             .then(res => res.json())
             .then(data => setTutors(data))
     }, [])
@@ -13,7 +13,7 @@ const OurTutors = () => {
         <div className="container mx-auto mt-10">
             <h1 className="text-4xl text-orange-500 font-bold mt-2">Our Tutors</h1>
             <p className="text-2xl font-semibold mb-4">People Behind Our Success</p>
-            <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-8 py-10">
+            <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-8 p-10">
                 {
                     tutors.map(tutor =>
                         <div className="lg:flex md:block sm:block justify-between items-center gap-10 hover:shadow-2xl py-3 rounded-lg duration-300 border border-gray-100" key={tutor?._id}>

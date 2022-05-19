@@ -7,7 +7,7 @@ import { Pagination, Autoplay } from "swiper";
 const Testimonials = () => {
     const [testimonials, setTestimonials] = useState([])
     useEffect(() => {
-        fetch("./Testimonials.json")
+        fetch("https://ali-jahan-academy.herokuapp.com/testimonials")
             .then(res => res.json())
             .then(data => setTestimonials(data))
     }, [])

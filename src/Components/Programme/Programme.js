@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Programme = () => {
     const [programmes, setProgrammes] = useState([])
     useEffect(() => {
-        fetch("./Programme.json")
+        fetch("https://ali-jahan-academy.herokuapp.com/programmes")
             .then(res => res.json())
             .then(data => setProgrammes(data))
     }, [])
