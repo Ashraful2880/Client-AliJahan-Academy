@@ -8,7 +8,7 @@ const Contact = () => {
                 <div className="bg-[#ffffff39] w-full shadow rounded p-8 sm:p-12">
                     <p className="text-3xl font-bold leading-7 text-center text-white">Just Drop a Message</p>
                     <form action="" method="post">
-                        <div className="md:flex items-center mt-12">
+                        <div className="md:flex items-center mt-12 text-left">
                             <div className="w-full md:w-1/2 flex flex-col">
                                 <label className="font-semibold leading-none text-white">Name</label>
                                 <input
@@ -27,7 +27,7 @@ const Contact = () => {
                                 />
                             </div>
                         </div>
-                        <div className="md:flex items-center mt-8">
+                        <div className="md:flex items-center mt-8 text-left">
                             <div className="w-full flex flex-col">
                                 <label className="font-semibold leading-none text-white">Email</label>
                                 <input
@@ -37,7 +37,7 @@ const Contact = () => {
                                 />
                             </div>
                         </div>
-                        <div>
+                        <div className="text-left">
                             <div className="w-full flex flex-col mt-8">
                                 <label className="font-semibold leading-none text-white">Message</label>
                                 <textarea
