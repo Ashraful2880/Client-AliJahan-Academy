@@ -17,7 +17,7 @@ const OurTutors = () => {
             <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-8 py-10">
                 {
                     tutors.map(tutor =>
-                        <div className="lg:flex md:block sm:block justify-between items-center gap-10">
+                        <div className="lg:flex md:block sm:block justify-between items-center gap-10 hover:shadow-2xl py-3 rounded-lg duration-300 border border-gray-100" key={tutor?._id}>
                             <img src={tutor?.image} alt="Tutor Profile" className="rounded-full w-40 mx-auto" />
                             <div className="lg:text-left text-center">
                                 <h4 className="text-xl font-semibold">{tutor?.name}</h4>
