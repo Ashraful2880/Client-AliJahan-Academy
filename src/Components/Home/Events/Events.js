@@ -9,17 +9,17 @@ const Events = () => {
             .then(res => res.json())
             .then(data => setEvents(data))
     }, [])
-    console.log(events);
+
     return (
         <div className="container mx-auto mb-10">
-            <div className="text-left mb-8 mt-4">
-                <h1 className="text-4xl font-bold text-orange-500">Upcoming Events</h1>
+            <div className="mb-8 mt-4">
+                <h1 className="text-4xl font-bold text-orange-500 mb-2">Upcoming Events</h1>
                 <p className="text-md font-semibold">Discover Your Perfect Program With Our Academy.</p>
             </div>
             <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-6">
                 {
                     events.map(event =>
-                        <div className="flex justify-between border p-2 rounded-md shadow-lg h-44">
+                        <div className="flex justify-between border p-2 rounded-md shadow-lg h-44" key={event?._id}>
                             <img className="w-56" src={event?.image} alt="Event" />
                             <div className="flex flex-col items-center justify-center mx-10 text-left">
                                 <h4 className="text-lg font-semibold mb-4">{event?.name}</h4>

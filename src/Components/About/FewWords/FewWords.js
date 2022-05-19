@@ -3,7 +3,7 @@ import React from 'react';
 const FewWords = () => {
     return (
         <div className="container mx-auto mb-10">
-            <h1 className="text-4xl font-bold text-orange-500 text-left mt-4">Few Words About Us</h1>
+            <h1 className="text-4xl font-bold text-orange-500 my-8">Few Words About Us</h1>
             <div className="lg:flex justify-between items-center gap-20 md:block sm:block">
                 <div className="lg:w-1/2 md:w-full sm:w-full lg:px-20 md:px-2 sm:px-1">
                     <img src="https://res.cloudinary.com/ashraful-islam/image/upload/v1652938867/Assesment/About-1_sfydej.webp" alt="about One" className="w-full" />

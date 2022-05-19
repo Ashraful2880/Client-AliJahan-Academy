@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SuccessfullStudents = () => {
+const Testimonials = () => {
     return (
         <div>
             Succesfull students are
@@ -8,4 +8,4 @@ const SuccessfullStudents = () => {
     );
 };
 
-export default SuccessfullStudents;
+export default Testimonials;
