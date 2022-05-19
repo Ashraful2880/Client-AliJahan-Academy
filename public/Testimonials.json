@@ -1,0 +1,38 @@
+[
+    {
+        "image": "https://res.cloudinary.com/ashraful-islam/image/upload/v1652944993/Assesment/testimonial-1_nhrdtq.jpg",
+        "name": "Albert Cole",
+        "designation": "Designer",
+        "comment": " I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends "
+    },
+    {
+        "image": "https://res.cloudinary.com/ashraful-islam/image/upload/v1652944993/Assesment/Testimonial-2_istyx0.jpg",
+        "name": "Alison Dawn",
+        "designation": "Wordpress Developer",
+        "comment": " I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends "
+    },
+    {
+        "image": "https://res.cloudinary.com/ashraful-islam/image/upload/v1652944993/Assesment/Testimonial-3_ozpef4.jpg",
+        "name": "John Smith",
+        "designation": "Software Engineer",
+        "comment": " I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends "
+    },
+    {
+        "image": "https://res.cloudinary.com/ashraful-islam/image/upload/v1652944993/Assesment/testimonial-1_nhrdtq.jpg",
+        "name": "Daniel Parker",
+        "designation": "Front-End Engineer",
+        "comment": " I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends "
+    },
+    {
+        "image": "https://res.cloudinary.com/ashraful-islam/image/upload/v1652944993/Assesment/Testimonial-2_istyx0.jpg",
+        "name": "Stive Joss",
+        "designation": "Tech Lead",
+        "comment": " I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends "
+    },
+    {
+        "image": "https://res.cloudinary.com/ashraful-islam/image/upload/v1652944993/Assesment/Testimonial-3_ozpef4.jpg",
+        "name": "John Doe",
+        "designation": "Data Engineer",
+        "comment": " I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends "
+    }
+]

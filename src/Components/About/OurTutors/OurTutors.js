@@ -10,10 +10,9 @@ const OurTutors = () => {
             .then(data => setTutors(data))
     }, [])
     return (
-        <div className="container mx-auto">
-            <p className="text-2xl font-semibold">People Behind Our Success</p>
-            <h1 className="text-5xl text-orange-500 font-bold mt-2 mb-4">Our Tutors</h1>
-            <p className="text-gray-500 w-1/2 mx-auto text-lg mb-10">We employ highly experienced and qualified teachers who set the ground for all our programs and courses.They are aimed to help you achieve more on your path to success.</p>
+        <div className="container mx-auto mt-10">
+            <h1 className="text-4xl text-orange-500 font-bold mt-2">Our Tutors</h1>
+            <p className="text-2xl font-semibold mb-4">People Behind Our Success</p>
             <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-8 py-10">
                 {
                     tutors.map(tutor =>
