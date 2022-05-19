@@ -19,8 +19,8 @@ const Events = () => {
             <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-6">
                 {
                     events.map(event =>
-                        <div className="flex justify-between border p-2 rounded-md shadow-lg h-44" key={event?._id}>
-                            <img className="w-56" src={event?.image} alt="Event" />
+                        <div className="flex justify-between border p-2 rounded-md shadow-lg cursor-pointer hover:shadow-2xl duration-300" key={event?._id}>
+                            <img className="w-56 h-44" src={event?.image} alt="Event" />
                             <div className="flex flex-col items-center justify-center mx-10 text-left">
                                 <h4 className="text-lg font-semibold mb-4">{event?.name}</h4>
                                 <div className="w-full flex justify-between items-center">

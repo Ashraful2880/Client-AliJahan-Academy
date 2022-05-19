@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+/* Bannar Image Overlay Style Here */
+
 .overlay {
   position: absolute;
   top: 0;
@@ -14,10 +16,35 @@
   background-color: #000000b8;
 }
 
+/* Bannar SLider Dot Change Style */
+
 span.swiper-pagination-bullet {
   background-color: #fff !important;
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #FF5A1F !important;
+}
+
+/* Scroll To Top Button Style*/
+
+button.styles_scroll-to-top__2A70v {
+  background: #F97316;
+  padding-left: 6px;
+  border-radius: 50%;
+}
+
+button.styles_scroll-to-top__2A70v:hover {
+  border: 1px solid #F97316;
+  background: transparent;
+  padding-left: 6px;
+  border-radius: 50%;
+}
+
+button.styles_scroll-to-top__2A70v:hover svg {
+  fill: #F97316;
+}
+
+svg {
+  height: 19px;
 }
