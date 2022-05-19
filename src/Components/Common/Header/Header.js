@@ -6,7 +6,7 @@ import Logo from "../../../Images/Logo-2.png";
 
 const Header = () => {
     return (
-        <nav className="bg-gray-800 sm:px-4 py-2.5">
+        <nav className="bg-gray-800 sm:px-4 py-2.5 sticky top-0 z-50">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
                 <Link to="/home" className='flex items-center'>
                     <img src={Logo} className="mr-3 h-9 w-9 sm:h-9 rounded-full" alt="Main Logo" />

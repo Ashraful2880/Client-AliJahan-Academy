@@ -5,11 +5,6 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { Link } from 'react-router-dom';
 
-import bannar1 from "../../../Images/Bannar-1.jpg";
-import bannar2 from "../../../Images/Bannar-2.jpg";
-import bannar3 from "../../../Images/Bannar-3.jpg";
-import bannar4 from "../../../Images/Bannar-4.png";
-
 const Bannar = () => {
     return (
         <>
@@ -22,7 +17,7 @@ const Bannar = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper">
                 <SwiperSlide>
-                    <img src={bannar1} alt="Bannar Image" className="relative" />
+                    <img src="https://res.cloudinary.com/ashraful-islam/image/upload/v1652967873/Assesment/Bannar-1_cjrgua.jpg" alt="Bannar Image" className="relative" />
                     <div className="overlay"></div>
                     <div className="absolute text-white top-[15%] left-[15%] text-left">
                         <p className="text-2xl text-orange-500 font-bold mb-6">We are the best</p>
@@ -34,7 +29,7 @@ const Bannar = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={bannar2} alt="Bannar Image" className="relative" />
+                    <img src="https://res.cloudinary.com/ashraful-islam/image/upload/v1652967873/Assesment/Bannar-2_kqy9ou.jpg" alt="Bannar Image" className="relative" />
                     <div className="overlay"></div>
                     <div className="absolute text-white top-[15%] left-[15%] text-left">
                         <p className="text-2xl text-orange-500 font-bold mb-6">We are the best</p>
@@ -46,7 +41,7 @@ const Bannar = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={bannar3} alt="Bannar Image" className="relative" />
+                    <img src="https://res.cloudinary.com/ashraful-islam/image/upload/v1652967872/Assesment/Bannar-3_g9et0z.jpg" alt="Bannar Image" className="relative" />
                     <div className="overlay"></div>
                     <div className="absolute text-white top-[15%] left-[15%] text-left">
                         <p className="text-2xl text-orange-500 font-bold mb-6">We are the best</p>
@@ -58,7 +53,7 @@ const Bannar = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={bannar4} alt="Bannar Image" className="relative" />
+                    <img src="https://res.cloudinary.com/ashraful-islam/image/upload/v1652967874/Assesment/Bannar-4_lpzwnx.png" alt="Bannar Image" className="relative" />
                     <div className="overlay"></div>
                     <div className="absolute text-white top-[15%] left-[15%] text-left">
                         <p className="text-2xl text-orange-500 font-bold mb-6">We are the best</p>
