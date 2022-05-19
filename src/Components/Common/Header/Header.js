@@ -38,6 +38,16 @@ const Header = () => {
                                 Contact
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/register" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
+                                Register
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/login" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
+                                Login
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>
