@@ -11,12 +11,12 @@ const Events = () => {
     }, [])
     console.log(events);
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto mb-10">
             <div className="text-left mb-8 mt-4">
                 <h1 className="text-4xl font-bold text-orange-500">Upcoming Events</h1>
                 <p className="text-md font-semibold">Discover Your Perfect Program With Our Academy.</p>
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-6">
                 {
                     events.map(event =>
                         <div className="flex justify-between border p-2 rounded-md shadow-lg h-44">

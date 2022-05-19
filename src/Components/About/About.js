@@ -1,10 +1,15 @@
 import React from 'react';
+import FewWords from './FewWords/FewWords';
+import OurTeachers from './OurTeachers/OurTeachers';
+import SuccessfullStudents from './SuccessfullStudents/SuccessfullStudents';
 
 const About = () => {
     return (
-        <div>
-            <h1>This is About Us Page</h1>
-        </div>
+        <>
+            <OurTeachers />
+            <SuccessfullStudents />
+            <FewWords />
+        </>
     );
 };
 
