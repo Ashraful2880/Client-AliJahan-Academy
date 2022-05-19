@@ -1,0 +1,38 @@
+[
+    {
+        "class": "Six",
+        "seat": 150,
+        "fees": 2000,
+        "others": 2500
+    },
+    {
+        "class": "Seven",
+        "seat": 150,
+        "fees": 2500,
+        "others": 3000
+    },
+    {
+        "class": "Eight",
+        "seat": 150,
+        "fees": 3000,
+        "others": 3500
+    },
+    {
+        "class": "Nine",
+        "seat": 150,
+        "fees": 3500,
+        "others": 4000
+    },
+    {
+        "class": "Ten",
+        "seat": 150,
+        "fees": 4000,
+        "others": 4500
+    },
+    {
+        "class": "Examinee",
+        "seat": 150,
+        "fees": 4500,
+        "others": 5000
+    }
+]
