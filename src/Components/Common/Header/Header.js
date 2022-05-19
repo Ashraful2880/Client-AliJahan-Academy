@@ -15,7 +15,9 @@ const Header = () => {
                     </p>
                 </Link>
                 <div className="flex md:order-2">
-                    <button type="button" className="text-white bg-orange-500 hover:bg-transparent border border-orange-500 font-medium rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0">Get started</button>
+                    <Link to="/admission">
+                        <button type="button" className="text-white bg-orange-500 hover:bg-transparent border border-orange-500 font-medium rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0">Get started</button>
+                    </Link>
                     <button data-collapse-toggle="mobile-menu-4" type="button" className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-orange-500 focus:outline-none focus:ring-0" aria-controls="mobile-menu-4" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
                         <FontAwesomeIcon icon={faBars} className="h-6 w-6" />
