@@ -6,7 +6,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const AdmissionFeature = () => {
     return (
-        <div className="promo-style py-10">
+        <div className="promo-style py-10 lg:px-0 px-4">
             <div className="container mx-auto">
                 <div className="lg:flex block justify-between items-center">
                     <div className="text-left">

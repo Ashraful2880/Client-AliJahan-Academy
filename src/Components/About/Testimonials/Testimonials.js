@@ -14,7 +14,7 @@ const Testimonials = () => {
     return (
         <div className="bg-gray-100 pt-10  pb-20">
             <div className="container mx-auto">
-                <h1 className="text-4xl text-orange-500 font-bold">What Our Students Have To Say</h1>
+                <h1 className="lg:text-4xl text-2xl text-orange-500 font-bold">What Our Students Have To Say</h1>
                 <p className="mb-10 text-lg text-gray-500">Discover Your Perfect Program In Our Courses.</p>
                 <Swiper
                     slidesPerView={3}

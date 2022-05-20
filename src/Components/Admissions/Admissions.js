@@ -3,7 +3,7 @@ import React from 'react';
 const Admissions = () => {
     return (
         <>
-            <div className="container mx-auto mb-8">
+            <div className="container mx-auto lg:mb-8 mb-0 lg:px-0 px-4">
                 <h1 className="text-4xl text-orange-500 font-bold">Our Curriculum</h1>
                 <h4 className="text-xl font-semibold mb-6">Academic Programme</h4>
                 <p className=" tracking-wider">Massa, et porttitor cras sed ultrices ullamcorper mauris semper iaculis. Ornare suscipit purus nulla</p>
@@ -22,7 +22,7 @@ const Admissions = () => {
                         <div className="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
                             <h3 className="pt-4 text-2xl text-center">Add Your Deatils For Admission</h3>
                             <hr className="mt-4 border-t" />
-                            <form className="px-8 pt-6 pb-8 mb-4 bg-white rounded" >
+                            <form className="lg:px-8 px-0 pt-6 pb-8 mb-4 bg-white rounded" >
                                 <div className="mb-4 md:flex md:justify-between">
                                     <div className="mb-4 md:mr-2 md:mb-0 text-left">
                                         <label

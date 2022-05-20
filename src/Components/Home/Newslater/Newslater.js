@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Newslater = () => {
     return (
-        <div className=" bg-sky-600 h-36 flex justify-center items-center">
+        <div className=" bg-sky-600 h-36 flex justify-center items-center lg:px-0 px-4">
             <FontAwesomeIcon icon={faPaperPlane} className="text-white text-4xl mr-4 animate-bounce" />
             <h1 className="text-white lg:text-4xl md:text-xl sm:text-lg font-semibold mr-6">Prepare Your Application Letter for Admission</h1>
             <Link to="/admission">
