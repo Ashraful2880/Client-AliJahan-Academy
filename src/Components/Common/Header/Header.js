@@ -60,6 +60,11 @@ const Header = () => {
                                 Login
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/dashboard" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
+                                Dashboard
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

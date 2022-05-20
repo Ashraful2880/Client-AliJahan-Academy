@@ -12,6 +12,7 @@ import Register from './Components/Register/Register';
 import Admissions from './Components/Admissions/Admissions';
 import Department from './Components/Programme/Programme';
 import Programme from './Components/Programme/Programme';
+import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
         </Routes>
         <Footer />
       </BrowserRouter>
