@@ -50,14 +50,14 @@ const Dashboard = () => {
                                 All Students
                             </Link>
                             <Link
-                                to="teachers"
-                                className="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-orange-600 focus:bg-orange-600 w-full block">
-                                All Teachers
-                            </Link>
-                            <Link
                                 to="manageStudents"
                                 className="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-orange-600 focus:bg-orange-600 w-full block">
                                 Manage Students
+                            </Link>
+                            <Link
+                                to="teachers"
+                                className="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-orange-600 focus:bg-orange-600 w-full block">
+                                All Teachers
                             </Link>
                             <Link
                                 to="makeAdmin"
