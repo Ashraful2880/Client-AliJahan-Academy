@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBvn4A5ytLlDTsC8oDezPCWNoILLhhO9vM",
-    authDomain: "ali-jahan-academy.firebaseapp.com",
-    projectId: "ali-jahan-academy",
-    storageBucket: "ali-jahan-academy.appspot.com",
-    messagingSenderId: "917197400641",
-    appId: "1:917197400641:web:b8d22d78cfe09e1524b4c0"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
 };
 export default firebaseConfig;

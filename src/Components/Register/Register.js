@@ -72,21 +72,11 @@ const Register = () => {
                     </div>
                     <button
                         onClick={googleSignIn}
-                        className="focus:outline-none focus:ring-0 p-3 border rounded-lg border-orange-500 flex items-center w-full mt-4 hover:bg-gray-200">
+                        className="focus:outline-none focus:ring-0 p-3 border rounded-lg border-orange-500 flex items-center w-1.5/2 mx-auto mt-4 hover:bg-gray-200">
                         <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in_2-svg2.svg" alt="google" />
                         <p className="text-base font-medium ml-4 text-gray-700">
                             Continue with Google
                         </p>
-                    </button>
-                    <button
-                        className="focus:outline-none focus:ring-0 p-3 border rounded-lg border-orange-500 flex items-center w-full mt-4 hover:bg-gray-200">
-                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in_2-svg3.svg" alt="github" />
-                        <p className="text-base font-medium ml-4 text-gray-700">Continue with Github</p>
-                    </button>
-                    <button
-                        className="focus:outline-none focus:ring-0 p-3 border rounded-lg border-orange-500 flex items-center w-full mt-4 hover:bg-gray-200">
-                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in_2-svg4.svg" alt="twitter" />
-                        <p className="text-base font-medium ml-4 text-gray-700">Continue with Twitter</p>
                     </button>
                 </div>
             </div>

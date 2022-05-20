@@ -6,7 +6,17 @@ import Logo from "../../../Images/Logo-2.png";
 import useAuth from '../../../Hooks/UseAuth';
 
 const Header = () => {
-    const { user, handleSignOut } = useAuth()
+    const { user, handleSignOut } = useAuth();
+
+    const toogleMenu = () => {
+        const toggleButton = document.getElementById("toogle");
+        if (toggleButton.style.display === "none") {
+            toggleButton.style.display = "block";
+        } else {
+            toggleButton.style.display = "none";
+        }
+    }
+
     return (
         <nav className="bg-gray-800 sm:px-4 py-2.5 sticky top-0 z-50">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -20,12 +30,12 @@ const Header = () => {
                     {user && <Link to="/dashboard/myProfile">
                         <img src={user?.photoURL} alt="userImage" className="w-10 h-10 rounded-full border border-orange-500" />
                     </Link>}
-                    <button data-collapse-toggle="mobile-menu-4" type="button" className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-orange-500 focus:outline-none focus:ring-0" aria-controls="mobile-menu-4" aria-expanded="false">
+                    <button onClick={toogleMenu} type="button" className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-orange-500 focus:outline-none focus:ring-0 ml-4">
                         <span className="sr-only">Open main menu</span>
                         <FontAwesomeIcon icon={faBars} className="h-6 w-6" />
                     </button>
                 </div>
-                <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1">
+                <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="toogle">
                     <ul className="flex flex-col mt-4 md:flex-row md:mt-0 md:text-sm md:font-medium">
                         <li>
                             <Link to="/home" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
@@ -54,9 +64,9 @@ const Header = () => {
                         </li>
                         {
                             user?.email ?
-                                <div className="flex gap-x-2">
+                                <div className="lg:flex block gap-x-2">
                                     <li>
-                                        <Link to="/dashboard" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
+                                        <Link to="/dashboard" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded lg:mb-0 mb-4" >
                                             Dashboard
                                         </Link>
                                     </li>
@@ -68,7 +78,7 @@ const Header = () => {
                                         </button>
                                     </li>
                                 </div> :
-                                <div className="flex gap-x-2">
+                                <div className="lg:flex block gap-x-2">
                                     <li>
                                         <Link to="/register" className="block py-2 text-white text-md hover:bg-orange-500 px-5 rounded" >
                                             Register

@@ -23,6 +23,20 @@ const Testimonials = () => {
                         clickable: true,
                     }}
                     autoplay={{ delay: 2000, disableOnInteraction: false, }}
+                    breakpoints={{
+                        300: {
+                            slidesPerView: 1,
+                        },
+                        550: {
+                            slidesPerView: 2,
+                        },
+                        900: {
+                            slidesPerView: 3,
+                        },
+                        1020: {
+                            slidesPerView: 3,
+                        },
+                    }}
                     modules={[Autoplay, Pagination]}
                     className="mySwiper">
                     {
@@ -31,9 +45,9 @@ const Testimonials = () => {
                                 <div className="border p-5 bg-white rounded-lg">
                                     <div className="flex items-center gap-5 mb-4">
                                         <img src={testimonial?.image} alt="Testimonial Profile" className="rounded-full" />
-                                        <div>
-                                            <h4>{testimonial?.name}</h4>
-                                            <h4>{testimonial?.designation}</h4>
+                                        <div className="text-left font-semibold">
+                                            <h4 className="text-xl">{testimonial?.name}</h4>
+                                            <h5 className="text-orange-500">{testimonial?.designation}</h5>
                                         </div>
                                     </div>
                                     <div className="text-left">
