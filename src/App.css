@@ -72,3 +72,7 @@ svg {
   background-position: top;
   background-attachment: fixed;
 }
+
+button.fixed.left-3.p-2.rounded-md.text-gray-400.hover\:text-white.hover\:bg-orange-500.focus\:outline-none.focus\:ring-2.focus\:ring-inset.focus\:ring-white.block.lg\:hidden {
+  z-index: 2000 !important;
+}

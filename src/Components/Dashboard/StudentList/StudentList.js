@@ -10,7 +10,7 @@ const StudentList = () => {
     }, [])
     console.log(students);
     return (
-        <div className="container mx-auto flex flex-col">
+        <div className="container mx-auto flex flex-col px-5">
             <div className="w-full my-5">
                 <h1 className="text-3xl text-left font-semibold text-orange-500">Our All Students List</h1>
             </div>
