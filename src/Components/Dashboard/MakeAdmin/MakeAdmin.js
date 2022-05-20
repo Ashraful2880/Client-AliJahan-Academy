@@ -2,7 +2,7 @@ import React from 'react';
 
 const MakeAdmin = () => {
     return (
-        <div className="bg-style h-full">
+        <div className="bg-style h-[80vh]">
             <form className="lg:pt-52 md:pt-40 sm:pt-16">
                 <h1 className="text-white mb-6 text-2xl font-bold">You Can make Admin By Registered Email</h1>
                 <input

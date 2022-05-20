@@ -2,7 +2,7 @@ import React from 'react';
 
 const ManageStudents = () => {
     return (
-        <div>
+        <div className="h-[80vh]">
             Manage Students Page
         </div>
     );

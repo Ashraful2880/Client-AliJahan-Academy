@@ -2,7 +2,7 @@ import React from 'react';
 
 const MyProfile = () => {
     return (
-        <div>
+        <div className="h-[80vh]">
             <h1>This is Your Profile</h1>
         </div>
     );

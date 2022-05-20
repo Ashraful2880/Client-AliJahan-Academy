@@ -29,11 +29,9 @@ const Dashboard = () => {
             </button>
             <main className="flex w-full h-full">
                 <aside className="w-80 h-full bg-gray shadow-md lg:block hidden" id="toogleDashboard">
-                    <div className="flex flex-col justify-between h-screen p-4 bg-gray-800">
+                    <div className="flex flex-col justify-between h-full w-80 p-4 bg-gray-800 fixed top-0">
                         <div className="text-sm">
-
                             <img className="w-12 h-12 mb-4 rounded-full mx-auto" src="" alt="User" />
-
                             <Link
                                 to="/dashboard"
                                 className="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-orange-600 focus:bg-orange-600 w-full block">
