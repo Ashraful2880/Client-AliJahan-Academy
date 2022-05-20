@@ -28,7 +28,7 @@ const Dashboard = () => {
                 <FontAwesomeIcon icon={faBars} className="px-2" />
             </button>
             <main className="flex w-full h-full">
-                <aside className="w-80 h-full bg-gray shadow-md" id="toogleDashboard">
+                <aside className="w-80 h-full bg-gray shadow-md lg:block hidden" id="toogleDashboard">
                     <div className="flex flex-col justify-between h-screen p-4 bg-gray-800">
                         <div className="text-sm">
 
