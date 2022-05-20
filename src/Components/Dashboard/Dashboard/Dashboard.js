@@ -8,9 +8,16 @@ import OurTutors from "../../About/OurTutors/OurTutors";
 import ManageStudents from "../ManageStudents/ManageStudents";
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import useAuth from "../../../Hooks/UseAuth";
+import { useEffect, useState } from "react";
 
 const Dashboard = () => {
     const { user } = useAuth();
+    const [admin, setAdmin] = useState(false);
+    useEffect(() => {
+        fetch(`https://ali-jahan-academy.herokuapp.com/users/${user?.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email]);
 
     const toogleMenu = () => {
         const toggleButton = document.getElementById("toogleDashboard");
@@ -50,20 +57,24 @@ const Dashboard = () => {
                                 All Students
                             </Link>
                             <Link
-                                to="manageStudents"
-                                className="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-orange-600 focus:bg-orange-600 w-full block">
-                                Manage Students
-                            </Link>
-                            <Link
                                 to="teachers"
                                 className="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-orange-600 focus:bg-orange-600 w-full block">
                                 All Teachers
                             </Link>
-                            <Link
-                                to="makeAdmin"
-                                className="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-orange-600 focus:bg-orange-600 w-full block">
-                                Make Admin
-                            </Link>
+                            {admin &&
+                                <>
+                                    <Link
+                                        to="manageStudents"
+                                        className="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-orange-600 focus:bg-orange-600 w-full block">
+                                        Manage Students
+                                    </Link>
+                                    <Link
+                                        to="makeAdmin"
+                                        className="bg-gray-900 text-white p-2 rounded mt-2 cursor-pointer hover:bg-orange-600 focus:bg-orange-600 w-full block">
+                                        Make Admin
+                                    </Link>
+                                </>
+                            }
                         </div>
                     </div>
                 </aside>
