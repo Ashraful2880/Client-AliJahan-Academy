@@ -13,8 +13,9 @@ import { useEffect, useState } from "react";
 const Dashboard = () => {
     const { user } = useAuth();
     const [admin, setAdmin] = useState(false);
+
     useEffect(() => {
-        fetch(`https://ali-jahan-academy.herokuapp.com/users/${user?.email}`)
+        fetch(`https://ali-jahan-academy.herokuapp.com/user/${user?.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email]);
@@ -37,7 +38,7 @@ const Dashboard = () => {
                 <FontAwesomeIcon icon={faBars} className="px-2" />
             </button>
             <main className="flex w-full h-full">
-                <aside className="w-80 h-full bg-gray shadow-md lg:block hidden" id="toogleDashboard">
+                <aside className="w-80 h-full bg-gray shadow-md lg:block hidden z-50 overflow-hidden" id="toogleDashboard">
                     <div className="flex flex-col justify-between h-full w-80 p-4 bg-gray-800 fixed top-18">
                         <div className="text-sm">
                             <img className="w-12 h-12 mb-4 rounded-full mx-auto" src={user?.photoURL} alt="User" />
