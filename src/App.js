@@ -13,28 +13,31 @@ import Admissions from './Components/Admissions/Admissions';
 import Department from './Components/Programme/Programme';
 import Programme from './Components/Programme/Programme';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
       <ScrollToTop smooth color="#fff" />
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path='/*' element={<NotFound />} />
-          <Route path='/' element={<Home />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/admission' element={<Admissions />} />
-          <Route path='/department' element={<Department />} />
-          <Route path='/programme' element={<Programme />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/login' element={<Login />} />
-          <Route path="/dashboard/*" element={<Dashboard />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path='/*' element={<NotFound />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/admission' element={<Admissions />} />
+            <Route path='/department' element={<Department />} />
+            <Route path='/programme' element={<Programme />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/login' element={<Login />} />
+            <Route path="/dashboard/*" element={<Dashboard />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
