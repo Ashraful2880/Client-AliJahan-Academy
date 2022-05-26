@@ -1,6 +1,6 @@
 # Client-AliJahan-Academy.
 ### Live Website Link:https://alijahan-academy.netlify.app/
-### Server Side Code Link:[https://github.com/Ashraful2880/Server-Smart-Shop](https://github.com/Ashraful2880/Server-Alijahan-Academy)
+### Server Side Code Link:https://github.com/Ashraful2880/Server-Alijahan-Academy
 
 ### About This Project.
 
