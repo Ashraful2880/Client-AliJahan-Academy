@@ -8,7 +8,7 @@ const MakeAdmin = () => {
     const handleMakeAdmin = event => {
         event.preventDefault();
         const admin = { email: adminEmail }
-        fetch('https://ali-jahan-academy.herokuapp.com/users/admin', {
+        fetch(`${process.env.REACT_APP_API_PATH}/users/admin`, {
             method: "PUT",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(admin)

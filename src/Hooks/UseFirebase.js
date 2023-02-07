@@ -118,7 +118,7 @@ const useFirebase = () => {
 
     const saveUser = () => {
         const dbUser = { displayName: name, email: email }
-        fetch('https://ali-jahan-academy.herokuapp.com/users', {
+        fetch(`${process.env.REACT_APP_API_PATH}/users`, {
             method: "POST",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(dbUser)
@@ -132,7 +132,7 @@ const useFirebase = () => {
     //<----------- Update User Info To Database ---------->
 
     const updateUser = (googleUser) => {
-        fetch('https://ali-jahan-academy.herokuapp.com/users', {
+        fetch(`${process.env.REACT_APP_API_PATH}/users`, {
             method: "PUT",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(googleUser)

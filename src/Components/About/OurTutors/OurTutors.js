@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const OurTutors = () => {
     const [tutors, setTutors] = useState([])
     useEffect(() => {
-        fetch("https://ali-jahan-academy.herokuapp.com/tutors")
+        fetch(`${process.env.REACT_APP_API_PATH}/tutors`)
             .then(res => res.json())
             .then(data => setTutors(data))
     }, [])

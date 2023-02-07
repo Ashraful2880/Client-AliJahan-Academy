@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const Events = () => {
     const [events, setEvents] = useState([])
     useEffect(() => {
-        fetch("https://ali-jahan-academy.herokuapp.com/events")
+        fetch(`${process.env.REACT_APP_API_PATH}/events`)
             .then(res => res.json())
             .then(data => setEvents(data))
     }, [])

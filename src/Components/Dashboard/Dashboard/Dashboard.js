@@ -15,7 +15,7 @@ const Dashboard = () => {
     const [admin, setAdmin] = useState(false);
 
     useEffect(() => {
-        fetch(`https://ali-jahan-academy.herokuapp.com/user/${user?.email}`)
+        fetch(`${process.env.REACT_APP_API_PATH}/user/${user?.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email]);

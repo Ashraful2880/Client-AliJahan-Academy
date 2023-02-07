@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ManageStudents = () => {
     const [students, setStudents] = useState([])
     useEffect(() => {
-        fetch("https://ali-jahan-academy.herokuapp.com/students")
+        fetch(`${process.env.REACT_APP_API_PATH}/students`)
             .then(res => res.json())
             .then(data => setStudents(data))
     }, [])
