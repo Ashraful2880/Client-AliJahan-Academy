@@ -4,11 +4,11 @@ import { Link, Route, Routes } from "react-router-dom";
 import DashboardHome from "../DashboardHome/DashboardHome";
 import MyProfile from "../MyProfile/MyProfile";
 import StudentList from "../StudentList/StudentList";
-import OurTutors from "../../About/OurTutors/OurTutors";
 import ManageStudents from "../ManageStudents/ManageStudents";
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import useAuth from "../../../Hooks/UseAuth";
 import { useEffect, useState } from "react";
+import DashboardTutors from "../DashboardTutors/DashboardTutors";
 
 const Dashboard = () => {
     const { user } = useAuth();
@@ -84,7 +84,7 @@ const Dashboard = () => {
                         <Route path="/" element={<DashboardHome />} />
                         <Route path="myProfile" element={<MyProfile />} />
                         <Route path="students" element={<StudentList />} />
-                        <Route path="teachers" element={<OurTutors />} />
+                        <Route path="teachers" element={<DashboardTutors />} />
                         <Route path="manageStudents" element={<ManageStudents />} />
                         <Route path="makeAdmin" element={<MakeAdmin />} />
                     </Routes>
